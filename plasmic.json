@@ -1,0 +1,62 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "iaGC8N7icN64RQS5kdk5ev",
+      "projectName": "FireSpot",
+      "version": "latest",
+      "cssFilePath": "plasmic/fire_spot/plasmic_fire_spot.module.css",
+      "components": [
+        {
+          "id": "VvQTp2Yg1t2o",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "iaGC8N7icN64RQS5kdk5ev",
+          "renderModuleFilePath": "plasmic/fire_spot/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/fire_spot/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [],
+      "images": [],
+      "codeComponents": [],
+      "projectApiToken": "Cj7xdYz2adNCkPQwJGvauap2MeisAOXdG11q74IMESFCwkyLRF6k3kbsucVIyJvXUzUSkXg7RDEjubxGikSA"
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "2yibM42Mc6k8",
+        "name": "Screen",
+        "projectId": "iaGC8N7icN64RQS5kdk5ev",
+        "contextFilePath": "plasmic/fire_spot/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "cliVersion": "0.1.157",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.157/dist/plasmic.schema.json"
+}
