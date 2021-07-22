@@ -6,6 +6,7 @@ import {
   DefaultSidebarProps
 } from "./plasmic/fire_spot/PlasmicSidebar";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
+import HamburgerMenu from "./HamburgerMenu";
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -38,7 +39,11 @@ function Sidebar_(props: SidebarProps, ref: HTMLElementRefOf<"div">) {
   // By default, we are just piping all SidebarProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicSidebar root={{ ref }} {...props} />;
+  return (<div >
+            <PlasmicSidebar root={{ ref }} {...props} />
+            <HamburgerMenu />
+          </div>
+  );
 }
 
 const Sidebar = React.forwardRef(Sidebar_);
