@@ -70,33 +70,18 @@
   bottom: 0px;
   border-radius: 999px;
 }
-.svg__yjPm {
+.profileIcon:global(.__wab_instance) {
   position: absolute;
-  object-fit: cover;
-  width: 16px;
-  height: 16px;
-  color: #f2f2f2;
-  display: block;
   top: 8px;
   left: 8px;
 }
-.svg___60D4D {
+.searchIcon:global(.__wab_instance) {
   position: absolute;
-  object-fit: cover;
-  width: 24px;
-  height: 24px;
-  color: #fff;
-  display: block;
   top: 776px;
   left: 27px;
 }
-.svg__zAgAt {
+.alertBellIcon:global(.__wab_instance) {
   position: absolute;
-  object-fit: cover;
-  width: 31px;
-  height: 38px;
-  color: #fff;
-  display: block;
   top: 11.83%;
   left: 5.55%;
 }

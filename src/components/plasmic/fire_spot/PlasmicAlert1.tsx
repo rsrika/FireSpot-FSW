@@ -30,6 +30,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import HomeIcon from "../../HomeIcon"; // plasmic-import: -70jaFn1U1/component
 import Alert from "../../Alert"; // plasmic-import: iSjyu56io1/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -40,7 +41,6 @@ import * as sty from "./PlasmicAlert1.module.css"; // plasmic-import: BhrVJdfdbx
 import VectorIcon from "./icons/PlasmicIcon__Vector"; // plasmic-import: saqBp-KweY/icon
 import Vector2Icon from "./icons/PlasmicIcon__Vector2"; // plasmic-import: _hIlKDMChB/icon
 import Vector3Icon from "./icons/PlasmicIcon__Vector3"; // plasmic-import: lIZFbyKS7s/icon
-import HomeIcon from "./icons/PlasmicIcon__Home"; // plasmic-import: F1GpC1vB1p_/icon
 import Polygon1Icon from "./icons/PlasmicIcon__Polygon1"; // plasmic-import: 0k0WA1LIx4K/icon
 import AlertCircleIcon from "./icons/PlasmicIcon__AlertCircle"; // plasmic-import: vAuCRuqwxP/icon
 import Vector5Icon from "./icons/PlasmicIcon__Vector5"; // plasmic-import: IBr-aXC3d5G/icon
@@ -65,6 +65,7 @@ export type PlasmicAlert1__OverridesType = {
   avatar?: p.Flex<"div">;
   miscIconsBackground?: p.Flex<"div">;
   iconsButton?: p.Flex<"div">;
+  homeIcon?: p.Flex<typeof HomeIcon>;
   alert?: p.Flex<typeof Alert>;
 };
 
@@ -152,8 +153,9 @@ function PlasmicAlert1__RenderFunc(props: {
             />
 
             <HomeIcon
-              className={classNames(defaultcss.all, sty.svg__aPPcM)}
-              role={"img"}
+              data-plasmic-name={"homeIcon"}
+              data-plasmic-override={overrides.homeIcon}
+              className={classNames("__wab_instance", sty.homeIcon)}
             />
 
             <img
@@ -211,6 +213,7 @@ const PlasmicDescendants = {
     "avatar",
     "miscIconsBackground",
     "iconsButton",
+    "homeIcon",
     "alert"
   ],
   iPhone11ProMax4: [
@@ -220,6 +223,7 @@ const PlasmicDescendants = {
     "avatar",
     "miscIconsBackground",
     "iconsButton",
+    "homeIcon",
     "alert"
   ],
   screenShot20210714At3392: ["screenShot20210714At3392"],
@@ -227,6 +231,7 @@ const PlasmicDescendants = {
   avatar: ["avatar", "miscIconsBackground", "iconsButton"],
   miscIconsBackground: ["miscIconsBackground", "iconsButton"],
   iconsButton: ["iconsButton"],
+  homeIcon: ["homeIcon"],
   alert: ["alert"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -240,6 +245,7 @@ type NodeDefaultElementType = {
   avatar: "div";
   miscIconsBackground: "div";
   iconsButton: "div";
+  homeIcon: typeof HomeIcon;
   alert: typeof Alert;
 };
 
@@ -310,6 +316,7 @@ export const PlasmicAlert1 = Object.assign(
     avatar: makeNodeComponent("avatar"),
     miscIconsBackground: makeNodeComponent("miscIconsBackground"),
     iconsButton: makeNodeComponent("iconsButton"),
+    homeIcon: makeNodeComponent("homeIcon"),
     alert: makeNodeComponent("alert"),
 
     // Metadata about props expected for PlasmicAlert1

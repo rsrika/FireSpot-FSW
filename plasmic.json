@@ -28,32 +28,6 @@
       "cssFilePath": "plasmic/fire_spot/plasmic_fire_spot.module.css",
       "components": [
         {
-          "id": "VvQTp2Yg1t2o",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "iaGC8N7icN64RQS5kdk5ev",
-          "renderModuleFilePath": "plasmic/fire_spot/PlasmicHomepage.tsx",
-          "importSpec": {
-            "modulePath": "Homepage.tsx"
-          },
-          "cssFilePath": "plasmic/fire_spot/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "j_vGL5KXs3",
-          "name": "ShawnsHomepage",
-          "type": "managed",
-          "projectId": "iaGC8N7icN64RQS5kdk5ev",
-          "renderModuleFilePath": "plasmic/fire_spot/PlasmicShawnsHomepage.tsx",
-          "importSpec": {
-            "modulePath": "ShawnsHomepage.tsx"
-          },
-          "cssFilePath": "plasmic/fire_spot/PlasmicShawnsHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "vrrXqYJS-O",
           "name": "HamburgerMenu",
           "type": "managed",
@@ -193,6 +167,71 @@
             "modulePath": "FireBlock.tsx"
           },
           "cssFilePath": "plasmic/fire_spot/PlasmicFireBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "VvQTp2Yg1t2o",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "iaGC8N7icN64RQS5kdk5ev",
+          "renderModuleFilePath": "plasmic/fire_spot/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/fire_spot/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "-70jaFn1U1",
+          "name": "HomeIcon",
+          "type": "managed",
+          "projectId": "iaGC8N7icN64RQS5kdk5ev",
+          "renderModuleFilePath": "plasmic/fire_spot/PlasmicHomeIcon.tsx",
+          "importSpec": {
+            "modulePath": "HomeIcon.tsx"
+          },
+          "cssFilePath": "plasmic/fire_spot/PlasmicHomeIcon.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8lZPU92Ytv",
+          "name": "AlertBellIcon",
+          "type": "managed",
+          "projectId": "iaGC8N7icN64RQS5kdk5ev",
+          "renderModuleFilePath": "plasmic/fire_spot/PlasmicAlertBellIcon.tsx",
+          "importSpec": {
+            "modulePath": "AlertBellIcon.tsx"
+          },
+          "cssFilePath": "plasmic/fire_spot/PlasmicAlertBellIcon.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "9a0YfTNxDA",
+          "name": "SearchIcon",
+          "type": "managed",
+          "projectId": "iaGC8N7icN64RQS5kdk5ev",
+          "renderModuleFilePath": "plasmic/fire_spot/PlasmicSearchIcon.tsx",
+          "importSpec": {
+            "modulePath": "SearchIcon.tsx"
+          },
+          "cssFilePath": "plasmic/fire_spot/PlasmicSearchIcon.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "yIW795alBg",
+          "name": "ProfileIcon",
+          "type": "managed",
+          "projectId": "iaGC8N7icN64RQS5kdk5ev",
+          "renderModuleFilePath": "plasmic/fire_spot/PlasmicProfileIcon.tsx",
+          "importSpec": {
+            "modulePath": "ProfileIcon.tsx"
+          },
+          "cssFilePath": "plasmic/fire_spot/PlasmicProfileIcon.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
