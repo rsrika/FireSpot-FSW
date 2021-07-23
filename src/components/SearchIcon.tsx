@@ -2,11 +2,10 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import {
-  PlasmicSidebar,
-  DefaultSidebarProps
-} from "./plasmic/fire_spot/PlasmicSidebar";
+  PlasmicSearchIcon,
+  DefaultSearchIconProps
+} from "./plasmic/fire_spot/PlasmicSearchIcon";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
-import HamburgerMenu from "./HamburgerMenu";
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -15,36 +14,32 @@ import HamburgerMenu from "./HamburgerMenu";
 // If you don't want to expose certain variants or slots as a prop, you can use
 // Omit to hide them:
 //
-// interface SidebarProps extends Omit<DefaultSidebarProps, "hideProps1"|"hideProp2"> {
+// interface SearchIconProps extends Omit<DefaultSearchIconProps, "hideProps1"|"hideProp2"> {
 //   // etc.
 // }
 //
-// You can also stop extending from DefaultSidebarProps altogether and have
+// You can also stop extending from DefaultSearchIconProps altogether and have
 // total control over the props for your component.
-interface SidebarProps extends DefaultSidebarProps {}
+interface SearchIconProps extends DefaultSearchIconProps {}
 
-function Sidebar_(props: SidebarProps, ref: HTMLElementRefOf<"div">) {
-  // Use PlasmicSidebar to render this component as it was
+function SearchIcon_(props: SearchIconProps, ref: HTMLElementRefOf<"svg">) {
+  // Use PlasmicSearchIcon to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicSidebar are:
+  // Props you can pass into PlasmicSearchIcon are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, we are just piping all SidebarProps here, but feel free
+  // By default, we are just piping all SearchIconProps here, but feel free
   // to do whatever works for you.
 
-  return (<div >
-            <PlasmicSidebar root={{ ref }} {...props} />
-            <HamburgerMenu className = "top"/>
-          </div>
-  );
+  return <PlasmicSearchIcon root={{ ref }} {...props} />;
 }
 
-const Sidebar = React.forwardRef(Sidebar_);
-export default Sidebar;
+const SearchIcon = React.forwardRef(SearchIcon_);
+export default SearchIcon;

@@ -31,6 +31,9 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Sidebar from "../../Sidebar"; // plasmic-import: 4dji5oGoR6/component
+import ProfileIcon from "../../ProfileIcon"; // plasmic-import: yIW795alBg/component
+import SearchIcon from "../../SearchIcon"; // plasmic-import: 9a0YfTNxDA/component
+import AlertBellIcon from "../../AlertBellIcon"; // plasmic-import: 8lZPU92Ytv/component
 import Fire from "../../Fire"; // plasmic-import: Lix0pM24ds/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -39,9 +42,6 @@ import * as projectcss from "./plasmic_fire_spot.module.css"; // plasmic-import:
 import * as sty from "./PlasmicHomepage.module.css"; // plasmic-import: VvQTp2Yg1t2o/css
 
 import Polygon1Icon from "./icons/PlasmicIcon__Polygon1"; // plasmic-import: 0k0WA1LIx4K/icon
-import VectorIcon from "./icons/PlasmicIcon__Vector"; // plasmic-import: saqBp-KweY/icon
-import Vector2Icon from "./icons/PlasmicIcon__Vector2"; // plasmic-import: _hIlKDMChB/icon
-import Vector3Icon from "./icons/PlasmicIcon__Vector3"; // plasmic-import: lIZFbyKS7s/icon
 import HomeIcon from "./icons/PlasmicIcon__Home"; // plasmic-import: F1GpC1vB1p_/icon
 import AlertCircleIcon from "./icons/PlasmicIcon__AlertCircle"; // plasmic-import: vAuCRuqwxP/icon
 import ellipse1HjnyW7Tbk from "./images/ellipse1.svg"; // plasmic-import: hjnyW7Tbk/picture
@@ -64,6 +64,9 @@ export type PlasmicHomepage__OverridesType = {
   avatar?: p.Flex<"div">;
   miscIconsBackground?: p.Flex<"div">;
   iconsButton?: p.Flex<"div">;
+  profileIcon?: p.Flex<typeof ProfileIcon>;
+  searchIcon?: p.Flex<typeof SearchIcon>;
+  alertBellIcon?: p.Flex<typeof AlertBellIcon>;
   group2?: p.Flex<"div">;
   rectangle3?: p.Flex<"div">;
   reportAFire?: p.Flex<"div">;
@@ -144,20 +147,23 @@ function PlasmicHomepage__RenderFunc(props: {
                 />
               </div>
 
-              <VectorIcon
-                className={classNames(defaultcss.all, sty.svg__yjPm)}
-                role={"img"}
+              <ProfileIcon
+                data-plasmic-name={"profileIcon"}
+                data-plasmic-override={overrides.profileIcon}
+                className={classNames("__wab_instance", sty.profileIcon)}
               />
             </div>
 
-            <Vector2Icon
-              className={classNames(defaultcss.all, sty.svg___60D4D)}
-              role={"img"}
+            <SearchIcon
+              data-plasmic-name={"searchIcon"}
+              data-plasmic-override={overrides.searchIcon}
+              className={classNames("__wab_instance", sty.searchIcon)}
             />
 
-            <Vector3Icon
-              className={classNames(defaultcss.all, sty.svg__zAgAt)}
-              role={"img"}
+            <AlertBellIcon
+              data-plasmic-name={"alertBellIcon"}
+              data-plasmic-override={overrides.alertBellIcon}
+              className={classNames("__wab_instance", sty.alertBellIcon)}
             />
 
             <HomeIcon
@@ -235,6 +241,9 @@ const PlasmicDescendants = {
     "avatar",
     "miscIconsBackground",
     "iconsButton",
+    "profileIcon",
+    "searchIcon",
+    "alertBellIcon",
     "group2",
     "rectangle3",
     "reportAFire",
@@ -249,6 +258,9 @@ const PlasmicDescendants = {
     "avatar",
     "miscIconsBackground",
     "iconsButton",
+    "profileIcon",
+    "searchIcon",
+    "alertBellIcon",
     "group2",
     "rectangle3",
     "reportAFire",
@@ -258,9 +270,12 @@ const PlasmicDescendants = {
   ],
   screenShot20210714At3392: ["screenShot20210714At3392"],
   sidebar: ["sidebar"],
-  avatar: ["avatar", "miscIconsBackground", "iconsButton"],
+  avatar: ["avatar", "miscIconsBackground", "iconsButton", "profileIcon"],
   miscIconsBackground: ["miscIconsBackground", "iconsButton"],
   iconsButton: ["iconsButton"],
+  profileIcon: ["profileIcon"],
+  searchIcon: ["searchIcon"],
+  alertBellIcon: ["alertBellIcon"],
   group2: ["group2", "rectangle3", "reportAFire", "freeBox"],
   rectangle3: ["rectangle3"],
   reportAFire: ["reportAFire", "freeBox"],
@@ -279,6 +294,9 @@ type NodeDefaultElementType = {
   avatar: "div";
   miscIconsBackground: "div";
   iconsButton: "div";
+  profileIcon: typeof ProfileIcon;
+  searchIcon: typeof SearchIcon;
+  alertBellIcon: typeof AlertBellIcon;
   group2: "div";
   rectangle3: "div";
   reportAFire: "div";
@@ -354,6 +372,9 @@ export const PlasmicHomepage = Object.assign(
     avatar: makeNodeComponent("avatar"),
     miscIconsBackground: makeNodeComponent("miscIconsBackground"),
     iconsButton: makeNodeComponent("iconsButton"),
+    profileIcon: makeNodeComponent("profileIcon"),
+    searchIcon: makeNodeComponent("searchIcon"),
+    alertBellIcon: makeNodeComponent("alertBellIcon"),
     group2: makeNodeComponent("group2"),
     rectangle3: makeNodeComponent("rectangle3"),
     reportAFire: makeNodeComponent("reportAFire"),
