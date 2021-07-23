@@ -5,6 +5,7 @@ This is a React project bootstrapped with [`create-plasmic-app`](https://www.npm
 First, run the development server:
 
 ```bash
+yarn install
 yarn start
 ```
 
